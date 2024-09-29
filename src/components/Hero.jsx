@@ -4,8 +4,8 @@ const Hero = () => {
 
     const downloadFile = () => {
         const link = document.createElement('a');
-        link.href = '../../warsha.apk';
-        link.setAttribute('download', 'app-release.apk');
+        link.href = './warsha.apk'; // Use the correct path to the file in the public folder
+        link.setAttribute('download', 'app-v1.0.apk'); // Filename when downloaded
         document.body.appendChild(link);
         link.click();
         document.body.removeChild(link); // Clean up link after download
@@ -28,7 +28,6 @@ const Hero = () => {
                 </button>
             </div>
         </div>
-
     );
 }
 
