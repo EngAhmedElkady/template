@@ -4,7 +4,7 @@ const Hero = () => {
 
     const downloadFile = () => {
         const link = document.createElement('a');
-        link.href = './Hero.jsx';
+        link.href = '../../warsha.apk';
         link.setAttribute('download', 'app-release.apk');
         document.body.appendChild(link);
         link.click();
