@@ -4,7 +4,7 @@ const Hero = () => {
 
     const downloadFile = () => {
         const link = document.createElement('a');
-        link.href = './warsha.apk'; // Use the correct path to the file in the public folder
+        link.href = './warsha-3.apk'; // Use the correct path to the file in the public folder
         link.setAttribute('download', 'app-v1.0.apk'); // Filename when downloaded
         document.body.appendChild(link);
         link.click();
@@ -18,7 +18,7 @@ const Hero = () => {
                     Alwarsha
                 </h1>
                 <p className="mt-6 text-xl text-gray-900 dark:text-gray-800 animate-fade-in-up delay-200">
-                    We have an app with version 1.0 you can download!
+                    We have an app with version 1.0 you can download it from here.
                 </p>
                 <button
                     onClick={downloadFile}
